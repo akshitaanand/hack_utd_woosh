@@ -23,7 +23,7 @@ export default class Login extends Component {
 
     onSubmit(e){
         e.preventDefault();
-        if(this.state.username === "aa407" && this.state.password === "password"){
+        if(this.state.username === "aa407@gmail.com" && this.state.password === "password"){
             this.props.history.push('/dashboard');
         }
     }
