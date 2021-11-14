@@ -4,6 +4,8 @@ import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import Login from "./components/login"
 import logo from "./utd.jpeg"
 import Dashboard from './components/dashboard';
+import Profile from './components/profile';
+
 
 
 
@@ -20,13 +22,13 @@ function App() {
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#" style = {{marginRight: 10, marginLeft: 10}}>Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Dashboard</a>
+        <a class="nav-link" href="#" style = {{marginRight: 10, marginLeft: 10}}>Dashboard</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Find a New Friend</a>
+        <a class="nav-link" href="#"style = {{marginRight: 10, marginLeft: 10}}>Find a New Friend</a>
       </li>
     </ul>
  
@@ -35,6 +37,7 @@ function App() {
   
       <Route path = "/" exact component = {Login} />
       <Route path = "/dashboard" exact component = {Dashboard} />
+      <Route path = "/profile" exact component = {Profile} />
     </Router>
 
   );
